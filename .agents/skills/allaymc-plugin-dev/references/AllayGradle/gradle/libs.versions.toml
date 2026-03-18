@@ -1,0 +1,14 @@
+[versions]
+allay-gradle = "0.2.2-SNAPSHOT"
+gradle-plugin-publish = "2.0.0"
+kotlin = "1.9.23"
+kotlinx-serialization = "1.5.0"
+
+[libraries]
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+[plugins]
+allay-gradle = { id = "org.allaymc.gradle.plugin", version.ref = "allay-gradle" }
+gradle-plugin-publish = { id = "com.gradle.plugin-publish", version.ref = "gradle-plugin-publish" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
